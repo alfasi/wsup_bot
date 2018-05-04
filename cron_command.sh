@@ -1,0 +1,1 @@
+wget --no-check-certificate $(python3 ~/wsup_bot/get_image_url.py) -O /tmp/image.jpg && python3 ~/wsup_bot/generate_commands.py > /tmp/commands &&  cat /tmp/commands - | sudo yowsup-cli demos -y -c ~/whatsapp.config
